@@ -1,4 +1,4 @@
-# <img src='https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/tv.svg' card_color='#40DBB0' width='50' height='50' style='vertical-align:bottom'/> Kodi Control Skill
+# Kodi Control Skill
 Control KODI open source media center with Mycroft.ai
 
 ## About 
@@ -31,6 +31,7 @@ The Kodi Skill uses conversational dialog to help you to control your KODI insta
 * "list movies by title"
 * "list movies by actor"
 * "list all movies"
+
 ## Conversational Context
 ** If mycroft.ai locates more than one movie that matches your request it will permit you to itterate through your requests
 using conversational context.
@@ -43,35 +44,45 @@ using conversational context.
 * Response: "Iron Man 2"
 * Request: "play" / "select"
 * Response: "o-k, attempting to play, Iron Man 2"
+
 ## Cinemavision Addon
 If mycroft.ai locates the addon CinemaVision it will prompt the user if this addon should be used during the 
 playback of the movie that was selected.
 * Response: "Would you like to play the movie using cinemavision?"
 * Request: "yes / no"
+
 ## Youtube Addon
 * Request: "play some Elton John from youtube on Kodi
 * Request: "Play the official captain marvel trailer from youtube on Kodi"
 * Request: "Stop youtube"
+
 ## Credits 
 * Cadair, PCWii
-* Original work forked from https://github.com/Cadair/mycroft-kodi; https://github.com/pcwii/kodi-skill
+* Original work forked from [Cadair](https://github.com/Cadair/mycroft-kodi); [PCWii](https://github.com/pcwii/kodi-skill)
+
 ## Category
 **Media**
+
 ## Tags
 '#kodi, #mycroft.ai, #python, #skills'
+
 ## Require 
 Tested on platform_picroft (others untested) 
+
 ## Other Requirements
 - [Mycroft](https://docs.mycroft.ai/installing.and.running/installation)
 - kodipydent
+
 ## Further Reading
 - [KODI API](https://kodi.wiki/index.php?title=JSON-RPC_API/v8)
 - [CinemaVision](https://kodi.wiki/view/Add-on:CinemaVision)
+
 ## Installation Notes
-- Configure Kodi to “allow remote control via HTTP”, under the Kodi settings:services
-- Configure Kodi to “allow remote control from applications on other systems”, under the Kodi settings:services
+- Configure Kodi to "allow remote control via HTTP", under the Kodi settings:services
+- Configure Kodi to "allow remote control from applications on other systems", under the Kodi settings:services
 - Under Kodi settings:services note the port number (8080)
 - Configure home.mycroft.ai to set your kodi instance ip address and port number
+
 ## Todo
 - Enable Kodi Volume Control (TODO [link](https://kodi.wiki/view/JSON-RPC_API/#Application.SetVolume))
 - Explore removing CinemaVision (TODO)
