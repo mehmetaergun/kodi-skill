@@ -6,15 +6,15 @@ Utilize the kodi API and Python library for controlling the KODI open source med
 The Kodi Skill uses conversational dialog to help you to control your KODI instance more naturally. 
 
 ## Examples 
-* "play the movie guardians of the galaxy"
-* "play the film planet of the apes"
+* "play the movie guardians of the galaxy on Kodi"
+* "play the film planet of the apes on Kodi"
 * "turn kodi subtitles on"
 * "turn kodi subtitles off"
 * "skip movie forward"
 * "skip movie backward"
-* "pause the movie"
-* "re-start the movie"
-* "stop the movie"
+* "pause the movie on Kodi"
+* "re-start the movie on Kodi"
+* "stop the movie on Kodi"
 * "show the movie information"
 * "hide the movie information"
 * "turn kodi notifications on"
@@ -35,7 +35,7 @@ The Kodi Skill uses conversational dialog to help you to control your KODI insta
 ** If mycroft.ai locates more than one movie that matches your request it will permit you to itterate through your requests
 using conversational context.
 * eg. "hey mycroft:"
-* Request: "play the move Iron Man"
+* Request: "play the movie Iron Man on Kodi"
 * Response: "I have located 3 movies with the name Iron Man, would you like me to list them?"
 * Request: "yes" / "no"
 * Response: "Iron Man, to Skip, say Next, say play, to play, or Cancel, to stop"
@@ -50,10 +50,10 @@ playback of the movie that was selected.
 * Request: "yes / no"
 ## Youtube Addon
 * Request: "play some Elton John from youtube
-* Request: "Play the official captain marvel trailer from youtube"
+* Request: "Play the official captain marvel trailer from youtube on Kodi"
 * Request: "Stop youtube"
 ## Credits 
-* PCWii
+* Cadair, PCWii
 * Original work forked from https://github.com/Cadair/mycroft-kodi; https://github.com/pcwii/kodi-skill
 ## Category
 **Media**
