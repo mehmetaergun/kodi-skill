@@ -73,5 +73,5 @@ Tested on platform_picroft (others untested)
 - Under Kodi settings:services note the port number (8080)
 - Configure home.mycroft.ai to set your kodi instance ip address and port number
 ## Todo
-- Enable Kodi Volume Control (TODO)
+- Enable Kodi Volume Control (TODO [link](https://kodi.wiki/view/JSON-RPC_API/#Application.SetVolume))
 - Explore removing CinemaVision (TODO)
