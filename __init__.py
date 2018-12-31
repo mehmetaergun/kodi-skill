@@ -23,7 +23,7 @@ import re
 import time
 import json
 
-_author__ = 'PCWii'
+_author__ = 'Cadair, PCWii'
 # Release - 20181213
 
 LOGGER = getLogger(__name__)
