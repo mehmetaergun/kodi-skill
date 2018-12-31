@@ -54,11 +54,11 @@ playback of the movie that was selected.
 * Request: "Stop youtube"
 ## Credits 
 * PCWii
-* Original work forked from https://github.com/Cadair/mycroft-kodi
+* Original work forked from https://github.com/Cadair/mycroft-kodi; https://github.com/pcwii/kodi-skill
 ## Category
 **Media**
 ## Tags
-'#kodi, #Krypton #Leia, #mycroft.ai, #python, #skills #youtube'
+'#kodi, #mycroft.ai, #python, #skills'
 ## Require 
 Tested on platform_picroft (others untested) 
 ## Other Requirements
@@ -73,18 +73,5 @@ Tested on platform_picroft (others untested)
 - Under Kodi settings:services note the port number (8080)
 - Configure home.mycroft.ai to set your kodi instance ip address and port number
 ## Todo
-- Convert all kodipydent functions to json requests (WIP)
-- ~~Enable username and password support in webgui~~ (Complete)
-- ~~Enable subtitle control~~ (Complete)
-- ~~Enable library scanning / cleaning~~ (Complete)
-- ~~Enable Support for cinemavision~~ (Complete)
-- ~~Correct cinemavision dialog control~~ (Complete)
-- Enable kodi Volume Control (WIP)
-- ~~Enable movie skip fwd/rev~~ (Complete)
-- Enable random movie selection (WIP)
-- ~~Add play "from youtube" option for videos / music~~ (Complete)
-- ~~Clean up decision tree, requires significant pruning~~ ;-)
-- Show a filtered list of movies when a play request returns multiple results (WIP)
-- Add support for the CommonPlay Skill Infrastructure (WIP)
-- Investigate other play functions for music / episodes / pvr
-- Investigate method to handle multiple KODI instances on network 
+- Enable Kodi Volume Control (TODO)
+- Explore removing CinemaVision (TODO)
