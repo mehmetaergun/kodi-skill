@@ -49,7 +49,7 @@ playback of the movie that was selected.
 * Response: "Would you like to play the movie using cinemavision?"
 * Request: "yes / no"
 ## Youtube Addon
-* Request: "play some Elton John from youtube
+* Request: "play some Elton John from youtube on Kodi
 * Request: "Play the official captain marvel trailer from youtube on Kodi"
 * Request: "Stop youtube"
 ## Credits 
