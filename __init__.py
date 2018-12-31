@@ -70,22 +70,26 @@ class KodiSkill(MycroftSkill):
 
         # eg. play the film iron man
         play_film_intent = IntentBuilder("PlayFilmIntent"). \
-            require("PlayKeyword").require("FilmKeyword").optionally("CinemaVisionKeyword").build()
+            require("PlayKeyword").require("FilmKeyword").require("KodiKeyword") \
+            .build()
         self.register_intent(play_film_intent, self.handle_play_film_intent)
 
         # eg. stop the movie
         stop_film_intent = IntentBuilder("StopFilmIntent"). \
-            require("StopKeyword").require("FilmKeyword").build()
+            require("StopKeyword").require("FilmKeyword").require("KodiKeyword") \
+            .build()
         self.register_intent(stop_film_intent, self.handle_stop_film_intent)
 
         # eg. pause the movie
         pause_film_intent = IntentBuilder("PauseFilmIntent"). \
-            require("PauseKeyword").require("FilmKeyword").build()
+            require("PauseKeyword").require("FilmKeyword").require("KodiKeyword") \
+            .build()
         self.register_intent(pause_film_intent, self.handle_pause_film_intent)
 
         # eg. resume the movie
         resume_film_intent = IntentBuilder("ResumeFilmIntent"). \
-            require("ResumeKeyword").require("FilmKeyword").build()
+            require("ResumeKeyword").require("FilmKeyword").require("KodiKeyword") \
+            .build()
         self.register_intent(resume_film_intent, self.handle_resume_film_intent)
 
         # eg. turn kodi notifications on
@@ -1049,7 +1053,7 @@ class KodiSkill(MycroftSkill):
 
     # user has requested to play a video from youtube
     @intent_handler(IntentBuilder('PlayYoutubeIntent').require("PlayKeyword").require('FromYoutubeKeyword').
-                    build())
+                    .require("KodiKeyword").build())
     def handle_play_youtube_intent(self, message):
         self.youtube_search = self.youtube_query_regex(message.data.get('utterance'))
         self.youtube_id = self.get_youtube_links(self.youtube_search)
